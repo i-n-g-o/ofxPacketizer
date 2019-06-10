@@ -98,7 +98,7 @@ void Packetizer::clear()
 */
 uint8_t Packetizer::appendData(char _c)
 {
-	appendData((uint8_t)_c);
+	return appendData((uint8_t)_c);
 }
 
 uint8_t Packetizer::appendData(int _data)
@@ -303,7 +303,7 @@ uint8_t Packetizer::setStartCondition(uint8_t* _buffer, size_t _bufferSize)
 */
 uint8_t Packetizer::setEndCondition(char _data)
 {
-	setEndCondition((uint8_t) _data);
+	return setEndCondition((uint8_t) _data);
 }
 
 uint8_t Packetizer::setEndCondition(uint8_t _data)
